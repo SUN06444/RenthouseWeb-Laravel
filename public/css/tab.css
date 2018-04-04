@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+.tablist {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+}
+.table table{
+  margin: 0 auto; width: 90%;
+  border: 2px solid #000000;
+
+}
+#panel3{
+text-align:center
+}
+
+#mid td {
+  padding-top: 15px;
+    border: 2px solid #000000;
+  word-wrap : break-word;
+  table-layout: fixed;
+
+}
+
+
+
+.tab {
+  position: relative;
+  background-color: #eee;
+  display: table-cell;
+  margin-right: -4px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: background-color 1s;
+  border-left: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+}
+
+.tab:last-child {
+  border-right: solid 1px #ddd;
+}
+
+.tab a {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  color: #666;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.tab:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: #fff;
+  border-top: solid 5px transparent;
+  transition: top .2s;
+}
+
+.tab-active:after {
+  top: -1px;
+}
+
+.tab-active:first-child:after {
+  border-top-color: #ff5e10;
+}
+
+.tab-active:nth-child(2):after {
+   border-top-color: #00ceee;
+}
+
+.tab-active:nth-child(3):after {
+   border-top-color: #ffd600;
+}
+
+
+.tabpanel {
+  display: none;
+  padding: 20px;
+  background: #fff;
+}
+
+.tabpanel.show {
+  display: block;
+}
+
+.tabpanel h1 {
+  margin: 0 0 .3em;
+}
+
+.tabpanel p {
+  margin: 0 0 1.5em;
+}
+
+#panel1 h1 {
+  color: #ff5e10;
+}
+
+#panel2 h1 {
+  color: #00ceee;
+}
+
+#panel3 h1 {
+  color: #ffd600;
+}
+
+.tab-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .tab {
+    display: block;
+    display: none;
+    margin: 0;
+    border: none;
+  }
+  
+  .tab:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .tab-active {
+    display: block;
+    top: 0;
+  }
+  
+  .tab a {
+    border-bottom: solid 1px #ddd;
+  }
+  
+  .tab-menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+    width: 24px;
+    height: 22px;
+  }
+  
+  .tab-menu .line {
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    margin-bottom: 4px;
+  }
+}
+
+/* Page style */
+
+*, 
+*:after, 
+*:before {
+  box-sizing: border-box;
+}

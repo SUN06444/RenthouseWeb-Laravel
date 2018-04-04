@@ -1,0 +1,109 @@
+* {
+  font-family: 微軟正黑體;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+ul li{
+   font-size: 18px;
+    color: #3a3838;
+}
+ul.A {
+list-style-type: decimal;
+ 
+}
+.l-col-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-col {
+  min-width: 50%;
+  width: 50%;
+  max-width: 50%;
+}
+
+.button {
+  border: 0;
+  font-size: 1em;
+  color: #fff;
+  background-color: rgba(5, 127, 148, 0.88);
+  border-radius: 0.25em;
+  padding: 1em;
+}
+.button:hover, .button:focus {
+  background-color: #c24528;
+}
+
+.form-box {
+  max-width: 65em;
+  background-color: rgba(255, 255, 255, 0.77);
+  border-radius: 0.25em;
+  overflow: hidden;
+  margin: 5em auto;
+  padding-top: 3em;
+  padding-bottom: 5em;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.5);
+}
+.form-box__form {
+  padding: 2em;
+   margin: 0 auto;
+}
+.form-box__content {
+  background-color: #fff;
+   margin: 0 auto;
+  padding: 2em;
+}
+.form-box__title {
+color: #d9230f;
+  font-weight: 600;
+  font-size: 1.75em;
+  margin-top: 0;
+      text-align: center;
+}
+.form-box__addon {
+  color: #333;
+}
+
+.form__field {
+  width: 100%;
+  font-size: 1em;
+  padding: 1em;
+  border: 0;
+  background-color: rgba(204, 204, 204, 0.63);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+.form__field:focus {
+  outline: 0;
+  background-color: #fff;
+  border-color: rgba(12, 114, 136, 0.5);
+}
+.form__label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form__button {
+  width: 100%;
+}
+
+.u-auto-format-text a {
+  color: #057f94;
+}
+.u-auto-format-text a:hover, .u-auto-format-text a:focus {
+  color: #c24528;
+}
+.u-auto-format-text p + p {
+  margin-top: 1em;
+}
+footer{
+    height: 40px;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    /*position: absolute;*/
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}
